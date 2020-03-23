@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:customControl="clr-namespace:CustomCheckBoxSample.CustomControls"
+             x:Class="CustomCheckBoxSample.MainPage"
+             Padding="0,20,0,0">
+
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <customControl:CustomCheckbox Text="Red Checkbox"
+                                          Color="Red"
+                                          TextColor="Red"
+                                          Grid.Row="0"
+                                          Grid.Column="0"/>
+            <customControl:CustomCheckbox Text="Black Checkbox"
+                                          Color="Black"
+                                          TextColor="Black"
+                                          Grid.Row="1"
+                                          Grid.Column="0"/>
+            <customControl:CustomCheckbox Text="Green Checkbox"
+                                          Color="Green"
+                                          TextColor="Green"
+                                          Grid.Row="2"
+                                          Grid.Column="0"/>
+
+            <customControl:CustomCheckbox Text="Purple Box"
+                                          Color="Purple"
+                                          TextColor="Red"
+                                          Grid.Row="0"
+                                          Grid.Column="1"/>
+            <customControl:CustomCheckbox Text="Red Box"
+                                          Color="Red"
+                                          TextColor="Black"
+                                          Grid.Row="1"
+                                          Grid.Column="1"/>
+            <customControl:CustomCheckbox Text="Blue Box"
+                                          Color="Blue"
+                                          TextColor="Green"
+                                          Grid.Row="2"
+                                          Grid.Column="1"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
